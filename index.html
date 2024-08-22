@@ -93,7 +93,7 @@
         <h2 class="text-center text-6xl font-extrabold px-12 my-8">
           A barn House of this Design has a striking appearance
         </h2>
-        <p class="text-center px-44">
+        <p class="text-center px-6 lg:px-44">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
@@ -121,10 +121,10 @@
                 <i class="fa-solid fa-arrow-right p-[6px]"></i>About Us
               </button>
             </div>
-            <h3 class="text-5xl font-bold my-5">
+            <h3 class="text-5xl font-bold my-5 text-center lg:text-left leading-snug">
               We design thoughtful, liveable spaces
             </h3>
-            <p class="mb-5">
+            <p class="mb-5 text-center lg:text-left">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -135,8 +135,10 @@
                 <div class="space-y-4">
                   <h5 class="font-semibold text-xl">Commercial</h5>
                   <p>
-                    The barn house captivates with its blend<br />of rustic
-                    charm and modern.
+                    The barn house captivates with its blend<br
+                      class="hidden lg:inline"
+                    />
+                    of rustic charm and modern.
                   </p>
                 </div>
               </div>
@@ -147,8 +149,10 @@
                 <div class="space-y-4">
                   <h5 class="font-semibold text-xl">Residential</h5>
                   <p>
-                    The barn house captivates with its blend<br />of rustic
-                    charm and modern.
+                    The barn house captivates with its blend<br
+                      class="hidden lg:inline"
+                    />
+                    of rustic charm and modern.
                   </p>
                 </div>
               </div>
@@ -161,7 +165,7 @@
         </div>
       </section>
 
-      <section class="container mx-auto mt-24">
+      <section class="container mx-auto mt-24 px-6 lg:px-0">
         <div>
           <div class="text-center">
             <button
@@ -221,10 +225,10 @@
     <!-- Another Main Part?? -->
     <main>
       <section class="my-24 container mx-auto">
-        <div>
+        <div class="px-6 lg:px-0">
           <div class="text-center">
             <button
-              class="rounded-full px-4 py-2 bg-[#ABEF5F] bg-opacity-20 w-1/2 lg:w-1/5 font-semibold"
+              class="rounded-full px-4 py-2 bg-[#ABEF5F] bg-opacity-20 w-2/3 lg:w-1/5 font-semibold"
             >
               <i class="fa-solid fa-arrow-right p-[6px]"></i>Explore Our Latest
               Work
@@ -241,7 +245,7 @@
         </div>
 
         <!-- Grids -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 mx-6 lg:mx-0">
           <div class="rounded-xl border col-span-2 p-8">
             <div class="flex flex-col lg:flex-row gap-6">
               <img src="assets/img1.png" alt="" class="rounded-xl" />
@@ -266,7 +270,7 @@
         </div>
 
         <!-- 2nd Grid -->
-        <div class="mt-8 gap-6 flex flex-col lg:flex-row justify-self-stretch">
+        <div class="mt-8 gap-6 flex flex-col-reverse lg:flex-row mx-6 lg:mx-0">
           <div class="border rounded-xl p-8">
             <img src="assets/img3.png" alt="" class="rounded-xl w-80 h-44" />
           </div>
@@ -295,7 +299,7 @@
 
       <!-- Connectivity -->
       <section class="bg-[url('assets/bg.jpg')] mt-24 bg-cover">
-        <div class="container mx-auto px-48">
+        <div class="container mx-auto lg:px-48 px-6">
           <div>
             <div class="text-center pt-24">
               <button
@@ -315,9 +319,7 @@
           </div>
 
           <!-- Input Form -->
-          <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8 text-center"
-          >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
             <div>
               <input
                 type="text"
@@ -385,7 +387,7 @@
         </p>
         <div>
           <ul
-            class="flex flex-col lg:flex-row text-white space-x-10 items-center justify-center"
+            class="flex flex-col lg:flex-row text-white lg:space-x-10 items-center justify-center"
           >
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
