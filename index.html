@@ -219,8 +219,8 @@
     </main>
 
     <!-- Another Main Part?? -->
-    <main class="container mx-auto">
-      <section class="my-24">
+    <main>
+      <section class="my-24 container mx-auto">
         <div>
           <div class="text-center">
             <button
@@ -261,14 +261,14 @@
             </div>
           </div>
           <div class="border rounded-xl p-8">
-            <img src="assets/img2.png" alt="" class="rounded-xl">
+            <img src="assets/img2.png" alt="" class="rounded-xl" />
           </div>
         </div>
 
         <!-- 2nd Grid -->
         <div class="mt-8 gap-6 flex flex-col lg:flex-row justify-self-stretch">
           <div class="border rounded-xl p-8">
-            <img src="assets/img3.png" alt="" class="rounded-xl w-80 h-44">
+            <img src="assets/img3.png" alt="" class="rounded-xl w-80 h-44" />
           </div>
           <div class="rounded-xl border col-span-2 p-8">
             <div class="flex flex-col lg:flex-row gap-6">
@@ -288,7 +288,82 @@
             </div>
           </div>
           <div class="border rounded-xl p-8">
-            <img src="assets/img5.png" alt="" class="rounded-xl w-80 h-44">
+            <img src="assets/img5.png" alt="" class="rounded-xl w-80 h-44" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Connectivity -->
+      <section class="bg-[url('assets/bg.jpg')] my-24 bg-cover">
+        <div class="container mx-auto px-48">
+          <div>
+            <div class="text-center pt-24">
+              <button
+                class="rounded-full px-4 py-2 bg-[#ABEF5F] bg-opacity-20 w-1/2 lg:w-1/5 font-semibold"
+              >
+                <i class="fa-solid fa-arrow-right p-[6px]"></i>Let's Connect
+              </button>
+            </div>
+            <h3 class="text-center text-5xl font-bold my-6">
+              Let's Discuss Next Project
+            </h3>
+            <p class="text-center">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication,<br />
+              featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+
+          <!-- Input Form -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8 mb-24 text-center"
+          >
+            <div>
+              <input
+                type="text"
+                placeholder="First Name*"
+                required
+                class="rounded-full w-full px-8 py-4 text-lg"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name*"
+                required
+                class="rounded-full w-full px-8 py-4 text-lg"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                placeholder="Phone Number*"
+                required
+                class="rounded-full w-full px-8 py-4 text-lg"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email*"
+                required
+                class="rounded-full w-full px-8 py-4 text-lg"
+              />
+            </div>
+            <textarea
+              name="text"
+              id=""
+              class="rounded-3xl col-span-2 px-8 py-4 text-lg"
+              rows="8"
+              placeholder="Write Your Message Here"
+            ></textarea>
+            <div class="col-span-2 mb-24">
+              <button class="bg-[#ABEF5F] font-bold rounded-full w-full py-3">
+                Send Mail&nbsp;<i
+                  class="fa-solid fa-arrow-right rounded-full bg-black text-white p-[6px] -rotate-45"
+                ></i>
+              </button>
+            </div>
           </div>
         </div>
       </section>
