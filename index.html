@@ -15,12 +15,100 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/52e149d1c0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>PH Assignment 3</title>
   </head>
 
   <body>
     <!-- Header Part -->
-    <header></header>
+    <header class="container mx-auto">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="hover:font-bold"><a>Home</a></li>
+              <li class="hover:font-bold"><a>Services</a></li>
+              <li class="hover:font-bold"><a>Portfolio</a></li>
+              <li class="hover:font-bold"><a>Blogs</a></li>
+              <li class="hover:font-bold"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"
+            ><i
+              class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] text-black p-[6px] -rotate-45"
+            ></i
+            ><span class="text-3xl">Rinterio</span></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 opacity-80 text-lg">
+            <li class="hover:font-bold"><a>Home</a></li>
+            <li class="hover:font-bold"><a>Services</a></li>
+            <li class="hover:font-bold"><a>Portfolio</a></li>
+            <li class="hover:font-bold"><a>Blogs</a></li>
+            <li class="hover:font-bold"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-3">
+          <i
+            class="fa-solid fa-magnifying-glass rounded-full p-2 bg-slate-100"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping rounded-full p-2 bg-slate-100"
+          ></i>
+          <a class="btn rounded-full bg-[#ABEF5F] font-bold"
+            >Book Consult<i
+              class="fa-solid fa-arrow-right rounded-full bg-black text-white p-[6px] -rotate-45"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="mx-auto">
+        <img class="mx-auto" src="assets/banner.png" alt="" />
+        <h2 class="text-center text-6xl font-extrabold px-12 my-8">
+          A barn House of this Design has a striking appearance
+        </h2>
+        <p class="text-center px-44">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <div class="text-center">
+          <button
+            class="my-8 rounded-full bg-[#ABEF5F] bg-opacity-50 text-xl font-semibold px-6 py-3"
+          >
+            View Details&nbsp;<i
+              class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] text-black p-[6px] -rotate-45"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <!-- Main Part -->
     <main></main>
