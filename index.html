@@ -19,43 +19,20 @@
       src="https://kit.fontawesome.com/52e149d1c0.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", "sans-serif";
+      }
+    </style>
     <title>PH Assignment 3</title>
   </head>
 
-  <body>
+  <body class="font-manrope">
     <!-- Header Part -->
     <header class="container mx-auto">
       <!-- Navbar -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li class="hover:font-bold"><a>Home</a></li>
-              <li class="hover:font-bold"><a>Services</a></li>
-              <li class="hover:font-bold"><a>Portfolio</a></li>
-              <li class="hover:font-bold"><a>Blogs</a></li>
-              <li class="hover:font-bold"><a>Contact Us</a></li>
-            </ul>
-          </div>
           <a class="btn btn-ghost text-xl"
             ><i
               class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] text-black p-[6px] -rotate-45"
@@ -73,17 +50,48 @@
           </ul>
         </div>
         <div class="navbar-end space-x-3">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="hover:font-bold"><a>Home</a></li>
+              <li class="hover:font-bold"><a>Services</a></li>
+              <li class="hover:font-bold"><a>Portfolio</a></li>
+              <li class="hover:font-bold"><a>Blogs</a></li>
+              <li class="hover:font-bold"><a>Contact Us</a></li>
+            </ul>
+          </div>
           <i
-            class="fa-solid fa-magnifying-glass rounded-full p-2 bg-slate-100"
+            class="fa-solid fa-magnifying-glass rounded-full p-2 bg-slate-100 hidden lg:inline"
           ></i>
           <i
-            class="fa-solid fa-cart-shopping rounded-full p-2 bg-slate-100"
+            class="fa-solid fa-cart-shopping rounded-full p-2 bg-slate-100 hidden lg:inline"
           ></i>
-          <a class="btn rounded-full bg-[#ABEF5F] font-bold"
-            >Book Consult<i
-              class="fa-solid fa-arrow-right rounded-full bg-black text-white p-[6px] -rotate-45"
-            ></i
-          ></a>
+          <div class="text-center">
+            <a
+              class="btn rounded-full bg-[#ABEF5F] font-bold hidden lg:inline py-3 px-5"
+              >Book Consult &nbsp;<i
+                class="fa-solid fa-arrow-right rounded-full bg-black text-white p-[6px] -rotate-45 hidden lg:inline"
+              ></i
+            ></a>
+          </div>
         </div>
       </div>
 
@@ -117,11 +125,13 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div class="px-6 lg:px-0">
             <div class="text-center lg:text-left">
-              <button class="rounded-full px-4 py-2 bg-white w-1/2 lg:w-1/5">
+              <button class="rounded-full px-4 py-2 bg-white w-1/2 lg:w-2/5">
                 <i class="fa-solid fa-arrow-right p-[6px]"></i>About Us
               </button>
             </div>
-            <h3 class="text-5xl font-bold my-5 text-center lg:text-left leading-snug">
+            <h3
+              class="text-5xl font-bold my-5 text-center lg:text-left leading-snug"
+            >
               We design thoughtful, liveable spaces
             </h3>
             <p class="mb-5 text-center lg:text-left">
@@ -325,7 +335,7 @@
                 type="text"
                 placeholder="First Name*"
                 required
-                class="rounded-full w-full px-8 py-4 text-lg"
+                class="rounded-full w-full px-8 py-4 text-lg border-none outline-none"
               />
             </div>
             <div>
@@ -333,7 +343,7 @@
                 type="text"
                 placeholder="Last Name*"
                 required
-                class="rounded-full w-full px-8 py-4 text-lg"
+                class="rounded-full w-full px-8 py-4 text-lg border-none outline-none"
               />
             </div>
             <div>
@@ -341,7 +351,7 @@
                 type="tel"
                 placeholder="Phone Number*"
                 required
-                class="rounded-full w-full px-8 py-4 text-lg"
+                class="rounded-full w-full px-8 py-4 text-lg border-none outline-none"
               />
             </div>
             <div>
@@ -349,17 +359,19 @@
                 type="email"
                 placeholder="Email*"
                 required
-                class="rounded-full w-full px-8 py-4 text-lg"
+                class="rounded-full w-full px-8 py-4 text-lg border-none outline-none"
               />
             </div>
-            <textarea
-              name="text"
-              id=""
-              class="rounded-3xl col-span-2 px-8 py-4 text-lg"
-              rows="8"
-              placeholder="Write Your Message Here"
-            ></textarea>
-            <div class="col-span-2 mb-24">
+            <div class="lg:col-span-2">
+              <textarea
+                name="text"
+                id=""
+                class="rounded-3xl px-8 py-4 text-lg w-full border-none outline-none"
+                rows="8"
+                placeholder="Write Your Message Here"
+              ></textarea>
+            </div>
+            <div class="lg:col-span-2 mb-24">
               <button class="bg-[#ABEF5F] font-bold rounded-full w-full py-3">
                 Send Mail&nbsp;<i
                   class="fa-solid fa-arrow-right rounded-full bg-black text-white p-[6px] -rotate-45"
